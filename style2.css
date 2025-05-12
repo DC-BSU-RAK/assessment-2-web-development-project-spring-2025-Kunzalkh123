@@ -1,0 +1,86 @@
+@media screen and (min-width: 480px) {
+  #leftsidebar {width: 200px; float: left;}
+  #main {margin-left: 216px;}
+}
+body{
+  font-family: cursive;
+  color: #b93e90 ;
+  font-size: 18px; /* gave a background image, changed the font, colour and font size */
+}
+
+header{
+    color: white; /* Colour of the text */
+    background-color:  #b859ab; /* Changed the background colour according to the requirement */
+    text-align: center; /* Aligned the text to the center */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font: 700; /* Used the font and the font family as per the requirement */
+    padding: 20px 0; /* Length and percent of the padding */
+}
+
+nav a{
+    color: rgb(255, 255, 255); /* Colour of the text */
+    font-family: Arial, Helvetica, sans-serif; 
+    font: 400; /* Used the font and the font family as per the requirement */
+    font-size: large; /* Size of the font is made large */
+    text-decoration: none;
+    padding: 10px;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #db1414;
+  float: left;
+  width: 500px;
+   background-color: #eb5a8a;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #8b2d2d;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+ #homeButton {
+      background-color: #00bcd4;
+      border: none;
+      color: #121212;
+      font-size: 20px;
+      padding: 14px 28px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      box-shadow: 0 4px 15px rgba(0, 188, 212, 0.6);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+      outline-offset: 4px;
+    }
+    #homeButton:hover, #homeButton:focus {
+      background-color: #0097a7;
+      box-shadow: 0 6px 20px rgba(0, 151, 167, 0.8);
+      outline: none;
+    }
+    /* Star style */
+  .star {
+    position: absolute;
+    background: rgb(156, 33, 90);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: twinkle 3s infinite ease-in-out;
+  }
+
+  /* Different sizes for stars */
+  .small { width: 2px; height: 2px; animation-duration: 3s; }
+  .medium { width: 5px; height: 5px; animation-duration: 4s; }
+  .large { width: 10px; height: 10px; animation-duration: 5s; }
+  /* Twinkle animation */
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.7; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.3); }
+  }
